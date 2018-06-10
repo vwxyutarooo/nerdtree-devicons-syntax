@@ -1,13 +1,13 @@
 ## nerdtree-devicon-syntax
 This vim plugin adds syntax for `nerdtree` with `vim-devicons`. This repository is forked from `vim-nerdtree-syntax-highlight`. Because `nerdtree-devicon-syntax` has mutch less features, I decided to split repository.
-If you feel `vim-nerdtree-syntax-hilight` makes your nerdtree to slow, this might possibly be solution.
+If you feel `vim-nerdtree-syntax-hilight` makes nerdtree to slow, this might possibly be solution.
 Also this fixed GUI Vim issue [vim-nerdtree-syntax-highlight/issues/16](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight/issues/16).
 
 ![](/screenshots/defaults.png)
 
 
 ## notice
-To make faster, this plugin less carful to hilighting icons. Also not supporting `g:NERDTreeFileExtensionHighlightFullName` option or using without `vim-devicons`.
+To make it faster, this plugin less carful to hilighting icons. Also not supporting `g:NERDTreeFileExtensionHighlightFullName` option or using without `vim-devicons`.
 
 
 ### Installation:
@@ -19,7 +19,7 @@ add this line to your .vimrc or neovim configuration file (usually it is in '~/.
 Example is for VimPlug:
 
 ```vim
-Plug '/vim-nerdtree-syntax-highlight'
+Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 ```
 
 
