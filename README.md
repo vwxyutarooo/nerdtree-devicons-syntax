@@ -3,6 +3,9 @@ This vim plugin adds syntax for `nerdtree` with `vim-devicons`. This repository 
 If you feel `vim-nerdtree-syntax-hilight` makes your nerdtree to slow, this might possibly be solution.
 Also this fixed GUI Vim issue [vim-nerdtree-syntax-highlight/issues/16](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight/issues/16).
 
+![](/screenshots/defaults.png)
+
+
 ## notice
 To make faster, this plugin less carful to hilighting icons. Also not supporting `g:NERDTreeFileExtensionHighlightFullName` option or using without `vim-devicons`.
 
