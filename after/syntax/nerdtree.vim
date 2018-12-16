@@ -297,13 +297,11 @@ let s:match_colors = {
 \ }
 
 
-"Pattern Matches
-
-" let s:test = ""
 if !exists('g:NERDTreePatternMatchHighlightColor')
   let g:NERDTreePatternMatchHighlightColor = {}
 endif
 
+" Declare syntax in each extention patterns
 for [key, val] in items(s:colors)
   if !has_key(g:NERDTreePatternMatchHighlightColor, key)
     let g:NERDTreePatternMatchHighlightColor[key] = val
@@ -313,6 +311,9 @@ endfor
 
 
 for [key, val] in items(s:match_colors)
-  exec 'syn match nerdtreePatternMatchIcon_'.val.' "\v\c\zs.{2}\ze\].*'.key.'" containedin=NERDTreeFile'
+  " \c : ignore cases
+  " \zs: match start from
+  " \ze: matche ends
+  exec 'syn match nerdtreePatternMatchIcon_'.val.' "\v\c\zs[^\[\]]+\ze\].*'.key.'" containedin=NERDTreeFile'
 endfor
 
