@@ -273,7 +273,7 @@ let s:match_colors = {
   \ '.*\.php$'                    : 'purple',
   \ 'procfile$'                   : 'purple',
   \ '\.erl$'                      : 'lightPurple',
-  \ '\.sh$'                       : 'lightPurple',
+  \ '\.sh\*?'                     : 'lightPurple',
   \ '\.scala$'                    : 'red',
   \ '\.d$'                        : 'red',
   \ '.*\.e?rb$'                   : 'red',
@@ -314,6 +314,7 @@ for [key, val] in items(s:match_colors)
   " \c : ignore cases
   " \zs: match start from
   " \ze: matche ends
-  exec 'syn match nerdtreePatternMatchIcon_'.val.' "\v\c\zs[^\[\]]+\ze\].*'.key.'" containedin=NERDTreeFile'
+  exec 'syn match nerdtreePatternMatchIcon_'.val.' "\v\c\zs[^\[\]]+\ze\].*'.key.'" containedin=NERDTreeFlags'
+  exec 'syn match nerdtreePatternMatchIcon_'.val.' "\v\c\zs[^\[\]]+\ze\].*'.key.'" containedin=NERDTreeExecFile'
 endfor
 
