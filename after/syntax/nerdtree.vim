@@ -314,7 +314,7 @@ for [key, val] in items(s:match_colors)
   " \c : ignore cases
   " \zs: match start from
   " \ze: matche ends
-  exec 'syn match nerdtreePatternMatchIcon_'.val.' "\v\c\zs[^\[\]]+\ze\].*'.key.'" containedin=NERDTreeFlags'
-  exec 'syn match nerdtreePatternMatchIcon_'.val.' "\v\c\zs[^\[\]]+\ze\].*'.key.'" containedin=NERDTreeExecFile'
+  exec 'syn match nerdtreePatternMatchIcon_'.val.' "\v\c\zs[^\[]+\ze\].*'.key.'" containedin=NERDTreeFlags'
+  exec 'syn match nerdtreePatternMatchIcon_'.val.' "\v\c\zs[^\[]+\ze\].*'.key.'" containedin=NERDTreeExecFile'
 endfor
 
