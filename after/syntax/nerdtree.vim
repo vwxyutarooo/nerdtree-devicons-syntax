@@ -273,6 +273,8 @@ let s:match_colors = {
   \ '.*\.php$'                    : 'purple',
   \ 'procfile$'                   : 'purple',
   \ '\.erl$'                      : 'lightPurple',
+  \ '\.exs?$'                     : 'lightPurple',
+  \ '\.l?eex$'                    : 'lightPurple',
   \ '\.sh\*?'                     : 'lightPurple',
   \ '\.scala$'                    : 'red',
   \ '\.d$'                        : 'red',
